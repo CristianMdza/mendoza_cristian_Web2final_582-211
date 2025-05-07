@@ -6,6 +6,6 @@ Web2 - Projet final
 
 Collège Montmorency
 
-##Équipe (Tout seul)
+## Équipe (Tout seul)
 
 Cristian Mendoza 
