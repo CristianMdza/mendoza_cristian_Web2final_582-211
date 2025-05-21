@@ -1024,7 +1024,7 @@
   
     /* === CADRES NOIR SOUS L’IMAGE AVEC TEXTE === */
     .texte-experience {
-        background-color: black;
+        background-color: var(--noir);
         color: var(--blanc);
         border-radius: 20px;
         padding: 1.2rem;
@@ -1071,13 +1071,12 @@
 /* =============================================================================== */
 
 
-/*  ======                ======  */
-/*  ======    VERSION     ======  */
-/*  ======   MOBILE CSS   ======  */
-
-
-
 @media screen and (max-width: 768px) {
+
+
+/*  ======     PAGE #1 "ACCUEIL     ======  */
+/*  ======          VERSION         ======  */
+/*  ======         MOBILE CSS       ======  */
 
 /* === STYLE CSS MOBILE FIRST - SECTION : ENTÊTE (HEADER) === */
     
@@ -1461,4 +1460,151 @@
         white-space: nowrap; 
         text-decoration: none;
     }
-  }
+
+
+/* =============================================================================== */
+
+
+/*  ======     PAGE #2 "EXPÉRIENCES BONIFIÉES     ======  */
+/*  ======                VERSION                 ======  */
+/*  ======               MOBILE CSS               ======  */
+
+
+    /* === SECTION : BANNIÈRE PUBLICITAIRE === */
+
+    .section-publicite {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 5rem; 
+        margin-top: -5rem;  
+    }
+
+    .image-publicite-experiences {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 1rem; 
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+    }
+
+    .image-publicite-experiences:hover {
+        transform: scale(1.02); 
+    }
+
+
+    /* === SECTION : TITRE ET PARAGRAPHE === */
+
+    .section-intro {
+        text-align: center;
+        max-width: 90%;
+        margin: 3.5rem 3.5rem;
+        padding: 0 1rem;
+        transform: translateY(20px);
+    }
+
+    .titre-experiences {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--blanc);
+        margin-bottom: 1rem;
+        font-family: var(--police-principale);
+    }
+
+    .texte-intro-experiences {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        color: var(--bleu);
+        font-family: var(--police-principale);
+        text-align: justify;
+    }
+
+
+/* === SECTION : CARTES DES EXPÉRIENCES === */
+
+    .section-cartes-experiences {
+        padding: 2rem 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .grille-cartes-experiences {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        gap: 4rem;
+        max-width: 100%;
+    }
+
+    /* CARTES EXPÉRIENCES BONIFIÉES VERSION MOBILE */
+    .carte-experience {
+        width: 100%;
+        max-width: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    /* IMAGE DES CARTES */
+    .image-experience {
+        width: 110%;
+        height: 130px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        transform: translateY(-9px);
+    }
+
+    /* CADRES NOIRS DES CARTES VERSION MOBILE */
+    .texte-experience {
+        width: 130%;
+        height: 140px;
+        padding: 0.8rem;
+        border-radius: 20px;
+        margin-top: -10px;
+        background-color: var(--noir);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: justify;
+        box-sizing: border-box;
+    }
+
+    /* TITRE DES CARTES VERSION MOBILE */
+    .texte-experience h3 {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        height: 1.4rem;
+        margin: 0;
+        font-family: var(--police-principale);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    /* TEXTE PARAGRAPHE EN BLEU VERSION MOBILE */
+    .texte-experience p {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        height: 3.6rem;
+        margin-top: 0.4rem;
+        overflow: hidden;
+        color: var(--bleu);
+        transition: color 0.3s ease-in-out 0.1s;
+        font-family: var(--police-principale);
+        text-align: justify;
+    }
+
+    /* EFFET SURVOL POUR LE TEXTE PARAGRAPHE EN BLEU VERSION MOBILE  */
+    .texte-experience p:hover {
+        color: var(--blanc);
+    }
+
+
+}
+
+
+
+
