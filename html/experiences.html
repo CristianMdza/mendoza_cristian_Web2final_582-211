@@ -1,13 +1,291 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cineplex</title>
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expériences Bonifiées | Cineplex</title>
+    <!-- Lien vers le fichier CSS principal -->
+    <link rel="stylesheet" href="../css/main.css" />
     
-</body>
+  </head>
+  <body>
+
+ <!-- === SECTION : ENTÊTE (HEADER ET NAVIGATION) === -->
+    <header class="entete-accueil">
+        <div class="entete-container">
+          <!-- LOGO CINEPLEX DANS L'ENTÊTE -->
+          <img src="../assets/images/logo_cineplex_entete.svg" alt="Logo Cineplex" class="logo-cineplex-entete" />
+      
+          <!-- MENU DE NAVIGATION DANS L'ENTÊTE -->
+          <nav class="menu-navigation">
+            <ul class="menu-principal">
+                <li class="item-menu experiences-bonifiees">
+                  <img src="../assets/images/logo_etoiles_experiences_bonifiees.svg" alt="Expériences Bonifiées" />
+                  <a href="#">Expériences Bonifiées</a>
+                </li>
+                <li class="item-menu aliments-boissons">
+                  <img src="../assets/images/logo_popcorn_aliments_et_boissons.svg" alt="Aliments et Boissons" />
+                  <a href="#">Aliments et Boissons</a>
+                </li>
+                <li class="item-menu billets">
+                  <img src="../assets/images/logo_billets.svg" alt="Billets" />
+                  <a href="#">Billets</a>
+                </li>
+              </ul>
+          </nav>
+      
+          <!-- ACTIONS À DROITE DANS L'ENTÊTE (LE HEADER ET NAV) -->
+
+          <div class="entete-actions">
+
+            <!-- CHANGEMENT DE LANGUE -->
+            <!-- CHANGEMENT DE LANGUE -->
+            <div class="cadre-langue">
+                <span>FR</span>
+                <img src="../assets/images/icone_drapeau_du_canada.svg" alt="Drapeau du Canada" />
+              </div>
+      
+            <!-- BARRE DE RECHERCHE -->
+            <div class="cadre-recherche">
+              <img src="../assets/images/icone_barre_recherche_entete.svg" alt="Recherche"  />
+              <input type="text" placeholder="Rechercher" />
+            </div>
+      
+            <!-- ICÔNES : LOCALISATION, COMPTE ET MENU BURGER -->
+            <img src="../assets/images/icone_localisation.svg" alt="Localisation" class="icone-action icone-localisation" />
+            <img src="../assets/images/icone_compte.svg" alt="Compte utilisateur" class="icone-action icone-compte" />
+            <img src="../assets/images/icone_menu_burger.svg" alt="Menu" class="icone-action icone-menu" />
+          </div>
+        </div>
+      
+        <!-- BARRE #1 BLEUE DE SEPARATION HEADER -->
+        <div class="barre-1-bleue"></div>
+      </header>
+
+<!-- === CONTENU PRINCIPAL DE LA PAGE D'ACCUEIL - === -->
+      
+<main class="contenu-principal">
+    
+<!-- === SECTION : HÉROS (BANNIÈRE PUBLICITAIRE CINÉMA EXPÉRIENCES BONIFIÉES ) -->
+    <section class="section-publicite">
+        <img src="../assets/images/publicite.svg" alt="Publicité Cineplex" class="image-publicite-experiences" />
+    </section>
+
+<!-- === SECTION : TITRE "EXPÉRIENCES" + PARAGRAPHE INTRODUCTIF === -->
+    <section class="section-intro">
+        <h2 class="titre-experiences">Expériences</h2>
+        <p class="texte-intro-experiences">
+        Vivez une expérience cinématographique où vous êtes transporté au cœur de l'action, où chaque sensation est stimulée, et où l'image et le son vous bercent avec force et émotion. Découvrez l'expérience cinéma ultime, une révolution dans le monde du divertissement.
+        </p>
+    </section>
+
+<!-- === GRANDE SECTION : AFFICHES D'EXPERIENCES BONIFIÉES  === -->
+<section class="section-cartes-experiences">
+    <div class="grille-cartes-experiences">
+  
+      <!-- Carte 1 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_reald_3d.svg" alt="RealD 3D" class="image-experience" />
+        <div class="texte-experience">
+          <h3>RealD 3D</h3>
+          <p>
+            Avec RealD 3D, vous voyez les films comme jamais auparavant : plus profonds, plus nets, plus immersifs.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Carte 2 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_screen_x.svg" alt="ScreenX" class="image-experience" />
+        <div class="texte-experience">
+          <h3>ScreenX</h3>
+          <p>
+            ScreenX étend le cadre du film au-delà de l'écran principal, projetant l'action sur les murs latéraux, une immersion à 270 C*.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Carte 3 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_imax.svg" alt="IMAX" class="image-experience" />
+        <div class="texte-experience">
+          <h3>IMAX</h3>
+          <p>
+            Un son et une image puissants, associés à une salle au design unique, pour une immersion totale.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Carte 4 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_4dx.svg" alt="4DX" class="image-experience" />
+        <div class="texte-experience">
+          <h3>4DX</h3>
+          <p>
+            4DX propose une expérience multisensorielle où mouvements, vibrations, eau, vent, éclairs et ...
+          </p>
+        </div>
+      </div>
+  
+      <!-- Carte 5 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_cine_concerts.svg" alt="Ciné-Concerts" class="image-experience" />
+        <div class="texte-experience">
+          <h3>Ciné-Concerts</h3>
+          <p>
+            Plongez dans une performance musicale en direct tout en regardant un chef-d'œuvre du cinéma.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Carte 6 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_cinema_driv_in.svg" alt="Cinéma Drive-In" class="image-experience" />
+        <div class="texte-experience">
+          <h3>Cinéma Drive-In</h3>
+          <p>
+            Une expérience rétro et conviviale, regardez le film depuis le confort de votre voiture.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Carte 7 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_ultra_avx.svg" alt="UltraAVX" class="image-experience" />
+        <div class="texte-experience">
+          <h3>UltraAVX</h3>
+          <p>
+            Grâce à ses écrans géants, UltraAVX offre une image spectaculaire avec un son Dolby Atmos immersif.
+          </p>
+        </div>
+      </div>
+
+      <!-- Carte 8 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_d_box.svg" alt="DBox" class="image-experience" />
+        <div class="texte-experience">
+          <h3>D-BOX</h3>
+          <p>
+            D-BOX, c'est une expérience hyperréaliste et immersive qui passe par des mouvements parfaitement synchronisés ...
+          </p>
+        </div>
+      </div>
+  
+      <!-- Carte 9 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_club_house.svg" alt="ClubHouse" class="image-experience" />
+        <div class="texte-experience">
+          <h3>ClubHouse</h3>
+          <p>
+            Jouer et rire en famille. L’univers des enfants prend vie avec des sièges colorés et une aire de jeu.
+          </p>
+        </div>
+      </div>
+  
+      <!-- Carte 10 -->
+      <div class="carte-experience">
+        <img src="../assets/images/affiche_sensibilites_sensorielles.svg" alt="Sensibilités sensorielles" class="image-experience" />
+        <div class="texte-experience">
+          <h3>Sensibilités sensorielles</h3>
+          <p>
+            Les lumières sont tamisées, le son est réduit. Une séance adaptée aux besoins sensoriels de chacun.
+          </p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+</main>
+
+<!-- === SECTION : PIED DE PAGE (FOOTER) === -->
+    
+    <footer class="footer-accueil">
+
+        <!-- BARRE #2 BLEUE DE SÉPARATION FOOTER -->
+        <div class="barre-2-bleue"></div>
+
+    <!-- CONTENEUR CENTRAL DU FOOTER -->
+    <div class="footer-contenu">
+      
+        <!-- BOUTON "NOUS JOINDRE" + CONTACT/RESEAUX SOCIAUX -->
+        <div class="footer-contact">
+          <div class="btn-nous-joindre">
+            <p>Nous Joindre</p>
+          </div>
+      
+          <div class="icons-sociales">
+            <img src="../assets/images/icone_telephone_pied_de_page.svg" alt="Telephone" />
+            <img src="../assets/images/icone_facebook_pied_de_page.svg" alt="Facebook" />
+            <img src="../assets/images/icone_twitter_pied_de_page.svg" alt="Twitter" />
+            <img src="../assets/images/icone_instagram_pied_de_page.svg" alt="Instagram" />
+          </div>
+        </div>
+      
+        <!-- GRAND CADRE BLEU CONTENANT LE LOGO + BLOCS DE LIENS -->
+        <div class="footer-boite-centrale">
+          <div class="logo-cineplex-footer">
+            <img src="../assets/images/logo_cineplex_pied_de_page.svg" alt="Logo Cineplex" />
+          </div>
+      
+          <div class="blocs-inf-footer">
+            <div class="bloc-liens-inf-footer">
+              <div class="titre-btn">Plus À Cineplex</div>
+              <ul>
+                <li>Santé et sécurité</li>
+                <li>Centre d’aide</li>
+                <li>Faites carrière chez Cineplex</li>
+                <li>Occasions promotionnelles</li>
+                <li>Le Magazine Cineplex</li>
+                <li>Carte-cadeau électronique en cadeau</li>
+                <li>Cartes-cadeaux</li>
+                <li>Téléchargez l’application</li>
+              </ul>
+            </div>
+      
+            <div class="bloc-liens-inf-footer">
+              <div class="titre-btn">Profil De L’entreprise</div>
+              <ul>
+                <li>Services aux entreprises et locations</li>
+                <li>Profil de l’entreprise</li>
+                <li>Salle de presse</li>
+                <li>Relations avec les investisseurs</li>
+                <li>Produit d’entreprise</li>
+              </ul>
+            </div>
+      
+            <div class="bloc-liens-inf-footer">
+              <div class="titre-btn">Profil Du Cinéma</div>
+              <ul>
+                <li>Trouver un cinéma</li>
+                <li>Aliments et boissons</li>
+                <li>Fêtes d’anniversaire</li>
+                <li>Vedettes et poussettes</li>
+                <li>Accessibilité</li>
+                <li>Accès au divertissement</li>
+                <li>Réunions et de projections pour entreprises</li>
+                <li>Événements scolaires</li>
+                <li>Code de conduite des invités</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+        <!-- BARRE BLEUE INFÉRIEURE -->
+        <div class="footer-barre-liens">
+          <ul class="barre-liens">
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">Conditions D’utilisation</a></li>
+            <li><a href="#">Paramètres Des Témoins</a></li>
+          </ul>
+        </div>
+        
+      </footer>
+
+      <script src="../js/script.js"></script>
+
+  </body>
 </html>
