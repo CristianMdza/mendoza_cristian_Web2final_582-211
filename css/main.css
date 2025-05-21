@@ -1,3 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+
 /* IMPORTATION DE TOUTES LES POLICES SAN FRANCISCO PRO DISPLAY */
 @font-face {
     font-family: 'SF Pro Display';
@@ -376,6 +383,39 @@
         text-align: center;
         width: 100px; 
     }
+
+
+/* === BANDE DES LOGOS CINEPLEX EN MOUVEMENT === */
+.bande-logos {
+    background-color: var(--noir);
+    overflow: hidden;
+    width: 100%;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .logos-animation {
+    display: flex;
+    gap: 3rem;
+    animation: defileLogos 20s linear infinite;
+    width: fit-content;
+  }
+  
+  .logos-animation img {
+    height: 40px;
+    flex-shrink: 0;
+  }
+  
+  @keyframes defileLogos {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
 
 /* === CONTENU PRINCIPAL DE LA PAGE D'ACCUEIL - ÇA SERT POUR APPLIQUER UN BACKGROUND EN DÉGRADÉ === */
     
@@ -1077,6 +1117,7 @@
 /*  ======     PAGE #1 "ACCUEIL     ======  */
 /*  ======          VERSION         ======  */
 /*  ======         MOBILE CSS       ======  */
+
 
 /* === STYLE CSS MOBILE FIRST - SECTION : ENTÊTE (HEADER) === */
     
