@@ -1,0 +1,1464 @@
+/* IMPORTATION DE TOUTES LES POLICES SAN FRANCISCO PRO DISPLAY */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-Bold.otf") format("opentype");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-BoldItalic.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-Heavy.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-HeavyItalic.otf") format("opentype");
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-LightItalic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-Medium.otf") format("opentype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-Regular.otf") format("opentype");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-RegularItalic.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-SemiboldItalic.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-Thin.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+    
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-ThinItalic.otf") format("opentype");
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-Ultralight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url("../assets/polices/SF-Pro-Display-UltralightItalic.otf") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+  }
+
+/* ==== CRÉATION DES VARIABLES POUR LES COULEURS ET POLICES ==== */
+    :root {
+        --bleu: #689fb7;
+        --bleu-fonce: #598ca1;
+        --blanc: #ffffff;
+        --blanc-fonce: #e3e3e3;
+        --gris-moyen: #3d3d3d;
+        --gris-moyen-fonce: #2b2b2b;
+        --gris-fonce: #242223;
+        --noir: #000000;
+  
+        --police-principale: 'San Francisco', sans-serif;
+    }
+
+
+/* =============================================================================== */
+
+
+
+/* ======       PAGE #1 "ACCUEIL"        ====== */
+/* ======          DESKTOP CSS           ====== */
+/* ======      VERSION GRAND ÉCRAN       ====== */
+
+
+/* === SECTION : ENTÊTE (HEADER ET NAVIGATION) === */
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .entete-accueil {
+        background-color: var(--noir); 
+        padding: 1rem 2rem;
+        padding-bottom: 12rem;
+    }
+  
+    .entete-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    /* ALIGNEMENT PERSONNALISÉ POUR LE LOGO-CINEPLEX DE L'ENTÊTE */
+    .logo-cineplex-entete {
+        transform: translateX(264px) translateY(56px);
+        transition: transform 0.3s ease;
+        transform-origin: center center;
+        cursor: pointer;
+    }
+
+    .logo-cineplex-entete:hover {
+        transform: translateX(264px) translateY(56px) scale(1.02);
+    }
+    
+    /* MENU DE NAVIGATION */
+    .menu-navigation .menu-principal {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start; 
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-navigation .menu-principal li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100px;
+        box-sizing: border-box;
+        transform: translateX(80px) translateY(50px);
+        transform-origin: center center;
+        transition: transform 0.3s ease;
+    }
+
+    /* TEXTES DU MENU DE NAVIGATION */
+    .menu-navigation .menu-principal a {
+        color: var(--bleu);
+        font-size: 0.75rem;
+        font-family: var(--police-principale);
+        transition: color 0.3s ease;
+        text-align: center;
+        line-height: 1.2;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-navigation .menu-principal a:visited {
+        color: var(--bleu);
+    }
+    
+    /* EFFETS AU SURVOL POUR ZOOM INDIVIDUEL ET COULEUR DU MENU PRINCIPALE DANS LE HEADER */
+    .menu-navigation .menu-principal li:hover img,
+    .menu-navigation .menu-principal li:hover a {
+        transform: scale(1.05);
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* ON AJOUTE CELA POUR QUE LE TEXTE DU MENU PRINCIAPLE DEVIENT BLANC AU SURVOL */
+    .menu-navigation .menu-principal li:hover a {
+        color: var(--blanc);
+    }
+
+    /* FLUIDITÉ DES TRANSITIONS AU SURVOL DU MENU PRINCIPALE */
+    .menu-navigation .menu-principal img,
+    .menu-navigation .menu-principal a {
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+      
+    /* IMAGES DES ICÔNES GÉNÉRALES QUI APPARATIENNENT AU MENU DE NAVIGATION */
+    .menu-navigation .menu-principal img {
+        display: block;
+        margin-bottom: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    /* TAILLE PERSONNALISÉE DES IMAGES-ICÔNES QUI APPARATIENNENT AU MENU DE NAVIGATION */
+    .experiences-bonifiees img {
+        width: auto;
+        height: 50px;
+    }
+      
+    .aliments-boissons img {
+        width: auto;
+        height: 50px;
+    }
+      
+    .billets img {
+        width: auto;
+        height: 50px;
+    }
+    
+
+    /* ALIGNEMENT PERSONNALISÉ DE CHAQUE ICÔNE DU MENU DE NAVIGATION */
+  
+    .experiences-bonifiees {
+        margin-top: 30px; 
+    }
+      
+    .aliments-boissons {
+        margin-top: 30px;
+    }
+      
+    .billets {
+        margin-top: 30px;
+    }
+
+    /* ACTIONS À DROITE */
+    .entete-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        transform: translateX(-264px) translateY(-20px);
+    }
+
+    /* CADRE BLEU - BOUTON CHANGEMENT DE LANGUE */
+    .cadre-langue {
+        display: flex;
+        align-items: center;
+        background-color: var(--bleu); 
+        padding: 0.15rem 0.6rem 0.15rem 0.8rem;
+        border-radius: 999px;
+        gap: 0.3rem;
+        font-size: 0.9rem;
+        color: var(--blanc);
+        font-family: var(--police-principale);
+        height: 30px;
+        transition: transform 0.3s ease, background-color 0.3s ease; 
+        position: relative;
+        will-change: transform, background-color;
+        transform-origin: center center;
+        cursor: pointer;
+    }
+
+    /* EFFET AU SURVOL SUR LE BOUTON CHANGEMENT "LANGUE" POUR AGRANDIR L'ÉCHELLE */
+    .cadre-langue:hover {
+        background-color: var(--bleu-fonce);
+        transform: scale(1.02);
+    }
+
+    .cadre-langue img {
+        height: 35px;
+        border-radius: 50%;
+        position: relative;
+        right: -9.5px; 
+    }
+
+  
+    /* CADRE BLEU - BARRE DE RECHERCHE */
+    .cadre-recherche {
+        display: flex;
+        align-items: center;
+        background-color: var(--bleu);
+        border-radius: 25px;
+        padding: 0.3rem 0.6rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        will-change: transform, background-color;
+        transform-origin: center center;
+    }
+
+    /* EFFET AU SURVOL SUR LE BOUTON DE LA BARRE "RECHERCHER" POUR AGRANDIR L'ÉCHELLE */
+    .cadre-recherche:hover {
+        background-color: var(--bleu-fonce);
+        transform: scale(1.02);
+    }
+  
+    .cadre-recherche img {
+        height: 25px;
+        margin-right: 0.4rem;
+        cursor: pointer;
+      }
+  
+    /* INPUT BARRE DE RECHERCHE */
+    .cadre-recherche input {
+        border: none;
+        background: transparent;
+        color: var(--blanc);
+        outline: none;
+        font-family: var(--police-principale);
+        font-size: 1rem;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .cadre-recherche input::placeholder {
+        color: var(--blanc); 
+        opacity: 1;
+      }
+  
+    /* ICÔNES ARRONDIS À DROITE */
+    .icone-action {
+        height: 20px;
+        width: 20px;
+        padding: 8px;
+        border-radius: 50%;
+        background-color: var(--bleu);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        position: relative;
+        will-change: transform, background-color;
+        transform-origin: center center;
+        cursor: pointer;
+      }
+
+      /* EFFET AU SURVOL SUR LES BOUTONS D'ACTION "LOCALISATION, COMPTE ET MENU BURGER" POUR AGRANDIR L'ÉCHELLE */
+    .icone-action:hover {
+        transform: scale(1.05);
+    }
+
+  
+    /* BARRE #1 BLEUE DE SÉPARATION HEADER */
+    .barre-1-bleue {
+        height: 10px;
+        background-color: var(--bleu);
+        margin-top: 1rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        border-radius: 4px;
+        transform: translateY(70px);
+    }
+
+    /* ALIGNEMENT DU TEXTE DU MENU */
+    .menu-navigation .menu-principal li {
+        text-align: center;
+        width: 100px; 
+    }
+
+/* === CONTENU PRINCIPAL DE LA PAGE D'ACCUEIL - ÇA SERT POUR APPLIQUER UN BACKGROUND EN DÉGRADÉ === */
+    
+    .contenu-principal {
+        background: linear-gradient(to bottom, var(--noir) 0%, var(--gris-moyen-fonce) 20%, var(--gris-moyen) 50%, var(--gris-moyen-fonce) 80%, var(--noir) 100%);
+        min-height: 100vh;
+        padding-bottom: 4rem;
+      }
+
+/* === SECTION : HÉRO / BANNIÈRE KUNG FU PANDA === */
+  
+    .hero {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        margin-top: -1rem;
+        margin-bottom: 3rem;
+    }
+  
+    .hero-container {
+        position: relative;
+        max-width: 900px; 
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+
+    /* EFFET AU SURVOL DU POPUP "KUNG FU PANDA" POUR AGRANDIR L'ÉCHELLE */
+    .hero-container:hover {
+        transform: scale(1.02);
+    }
+  
+    .hero-image {
+        width: 100%;
+        border-radius: 1.5rem;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+        object-fit: cover;
+        display: block;
+    }
+  
+    /* BOUTONS GLISSER À L'INTÉRIEUR DU POPUP KUNG FU PANDA */
+    .btn-glisser {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+  
+    .btn-gauche {
+        left: 1rem;
+    }
+  
+    .btn-droite {
+        right: 1rem;
+    }
+  
+    /* CERCLES DE NAVIGATION À L'INTÉRIEUR DU POPUP KUNG FU PANDA */
+    .cercles-navigation {
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0.6rem;
+    }
+  
+    .cercles-navigation img {
+        width: 15px;
+        height: 15px;
+    }
+
+
+/* === SECTIONS FILMS / ÉVÉNEMENTS SPÉCIAUX / À VENIR === */
+
+    .section-films {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+  
+    /* TITRES PRINCIPALES */
+    .section-films h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: var(--blanc);
+        font-family: var(--police-principale);
+        font-weight: 600;
+    }
+  
+    /* CONTENEUR DE TOUTES LES CARTES DE FILMS */
+    .cartes-films {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+  
+    /* STYLE DE CHAQUE CARTE DE FILM */
+    .carte-film {
+        width: 170px;
+        height: 360px;
+        background-color: var(--noir);
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+  
+    /* EFFET AU SURVOL DE LA CARTE POUR AGRANDIR L'ÉCHELLE */
+    .carte-film:hover {
+        transform: scale(1.02);
+    }
+  
+    /* IMAGE À L’INTÉRIEUR DE LA CARTE */
+    .carte-film img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        display: block;
+        border-bottom: none; 
+    }
+
+    /* J'AI AJOUTÉ CELA POUR BIEN POSITIONNER L'IMAGE DE SPIDERMAN */
+    .carte-film img[alt*="Spider-Man"] {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 240px;
+        transform: scale(1.08) translateY(-4%);;
+        transform-origin: center;
+    }
+  
+    /* INFOS AFFICHES (TITRE DU FILM + lIEN DE VOIR LA BANDE-ANNONCE) */
+  
+    .infos-film {
+        padding: 0.75rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+  
+    .infos-film p {
+        margin: 0.5rem 0 0.3rem;
+        font-size: 0.85rem;
+        font-family: var(--police-principale);
+        color: var(--blanc);
+        text-align: center;
+        line-height: 1.2;
+        min-height: 2.5rem; 
+    }
+  
+    /* LIEN + ICÔNE DE "PLAY" */
+    .bande-annonce {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+    }
+  
+    /* STYLE D'IMAGE SVG - BOUTON "PLAY" DE "VOIR LA BANDE-ANNONCE" */
+    .bande-annonce img {
+        width: 20px;
+        height: 20px;
+        margin-top: 1px;
+        filter: drop-shadow(0 0 0 transparent); 
+    }
+  
+    /* STYLE DE LA TYPO "VOIR LA BANDE-ANNONCE" */
+    .bande-annonce a {
+        font-size: 0.75rem;
+        color: var(--bleu);
+        font-family: var(--police-principale);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+  
+    /* EFFET SURVOL DE LA TYPO "VOIR LA BANDE-ANNONCE" */
+    .bande-annonce a:hover {
+        color: var(--blanc);
+    }
+  
+    /* STYLE DE LA CARTE "VOIR PLUS" */
+    .voir-plus {
+        background-color: transparent;
+        border: 2px solid var(--bleu);
+        border-radius: 20px;
+        width: 170px;
+        height: 360px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--blanc);
+        font-family: var(--police-principale);
+        font-weight: 600;
+        text-align: center;
+        padding: 0; 
+        box-sizing: border-box; 
+    }
+
+    /* EFFET SUR LE TEXTE "VOIR PLUS"*/
+    .voir-plus p {
+        cursor: pointer;
+        position: relative;
+    }
+
+    /* EFFET "LIEN" D'UNE LIGNE BLANCHE QUI APPARAIT QUAND ON CLICK SUR LE TEXTE "VOIR PLUS"*/
+    .voir-plus p:active::after {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--blanc);
+    }
+
+/* === SECTION : POPUP PROMOTIONNEL KONG VS GODZILLA === */
+
+    /* SECTION PRINCIPALE DU POPUP */
+    .section-popup {
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+    }
+  
+    /* CARTE OU CADRE DU POPUP PROMOTIONNEL */
+    .popup-promo {
+        position: relative;
+        width: 600px;
+        height: 300px;
+        border-radius: 2rem;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    /* EFFET AU SURVOL DU POPUP "KONG VS GODZILLA" POUR AGRANDIR L'ÉCHELLE */
+    .popup-promo:hover {
+        transform: scale(1.02);
+    }
+  
+    /* IMAGE "KONG VS GODZILLA" DE FOND DU POPUP */
+    .popup-promo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.08);
+    }
+  
+    /* ZONE DE TEXTE CENTRÉE */
+    .zone-texte {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        padding: 0;
+        width: 280px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    /* DÉCORATION DE LA ZONE DE TEXTE ("ARRIÈRE-PLAN" EN FORME DE PARALLÉLOGRAMME) */
+    .zone-texte::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: var(--gris-fonce);
+        border: 2.5px solid var(--bleu);
+        clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        z-index: -1;
+    }
+  
+    /* TEXTE CENTRAL "GAGNER 300 POINTS..." */
+    .zone-texte p {
+        margin: 0;
+        padding: 1rem 1.6rem;
+        color: var(--bleu);
+        font-family: var(--police-principale);
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    /* BOUTON BLEU "REGARDEZ À LA MAISON" */
+    .btn-popup {
+        position: absolute;
+        bottom: 1.9rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--bleu);
+        color: var(--noir);
+        border: none;
+        border-radius: 2rem;
+        padding: 0.5rem 1.2rem;
+        font-weight: bold;
+        font-family: var(--police-principale);
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+  
+    /* EFFET SURVOL CHANGEMENT DE COULEUR - BOUTON BLEU "REGARDEZ À LA MAISON" */
+    .btn-popup:hover {
+        background-color: var(--bleu-fonce);
+    }  
+  
+    /* BOUTON "X" POUR FERMER POPUP */
+    .btn-fermer {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+  
+    /* STYLE DE TAILLE - BOUTON "X" POUR FERMER POPUP */
+    .btn-fermer img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+/* === SECTION : PIED DE PAGE (FOOTER) === */
+
+    /* BARRE #2 BLEUE DE SÉPARATION EN HAUT DU FOOTER */
+    .barre-2-bleue {
+        height: 10px;
+        background-color: var(--bleu);
+        margin-top: 1rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        border-radius: 4px;
+    }
+  
+    /* CONTENEUR GÉNÉRAL DU FOOTER */
+    .footer-accueil {
+        background-color: var(--noir);
+        color: var(--blanc);
+        padding: 2rem 1rem;
+        padding-bottom: 9rem;
+        font-family: var(--police-principale);
+        font-size: 0.85rem;
+    }
+
+    /* CONTENEUR CENTRAL */
+    .footer-contenu {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+  
+    /* BOUTON NOUS JOINDRE */
+    .btn-nous-joindre {
+        background-color: var(--bleu);
+        padding: 0.8rem 1.8rem;
+        border-radius: 999px;
+        margin: 2rem auto 1rem auto;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+        position: relative;
+        will-change: transform, background-color;
+        transform-origin: center center;
+        transform: translateY(30px);
+    }
+  
+    .btn-nous-joindre p {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: var(--blanc);
+        font-family: var(--police-principale);
+        line-height: 1;
+        transform: translateZ(0);
+    }
+
+
+
+    /* EFFET AU SURVOL SUR LE BOUTON "NOUS JOINDRE" POUR AGRANDIR L'ÉCHELLE */
+    .btn-nous-joindre:hover {
+        background-color: var(--bleu-fonce);
+        transform: translateY(30px) scale(1.02);
+    }
+
+    
+  
+    /* === ICÔNES DE CONTACT / RÉSEAUX SOCIAUX === */
+    .footer-contact {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+  
+    .icons-sociales {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        position: relative;
+        transform: translateY(40px);
+    }
+  
+    .icons-sociales img {
+        width: 40px;
+        height: auto;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    /* EFFET AU SURVOL SUR LES ICÔNES "CONTACT ET RESEAUX SOCIAUX" POUR AGRANDIR L'ÉCHELLE */
+    .icons-sociales img:hover {
+        transform: scale(1.05);
+    }
+  
+    /* GRAND CADRE BLEU CENTRÉ AVEC LE LOGO ET LIENS */
+    .footer-boite-centrale {
+        background-color: var(--bleu);
+        padding: 3rem 2rem;
+        border-radius: 40px;
+        max-width: 850px;
+        margin: 2rem auto 0 auto;
+        text-align: center;
+        transform: translateY(90px);
+    }
+  
+    /* LOGO CINEPLEX CENTRÉ */
+    .logo-cineplex-footer img {
+        width: 150px;
+        margin-bottom: 2rem;
+        cursor: pointer;
+        transition: transform 0.3s ease; 
+        transform-origin: center center; 
+    }
+
+    .logo-cineplex-footer img:hover {
+        transform: scale(1.05); 
+    }
+  
+    /* BLOC DE COLONNES DE LIENS */
+    .blocs-inf-footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 2rem;
+    }
+  
+    /* CHAQUE COLONNE DE LIENS */
+    .bloc-liens-inf-footer {
+        text-align: left;
+        width: 260px;
+        box-sizing: border-box;
+    }
+  
+    /* TITRES DES BLOCS EN PETITS CADRES BLANCS */
+    .titre-btn {
+        background-color: var(--blanc);
+        color: var(--noir);
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+        border-radius: 999px;
+        width: 200px; 
+        margin: 0 auto 1rem auto;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        transform-origin: center center;
+        cursor: pointer;
+        will-change: transform, background-color, color;
+        display: inline-block;
+    }
+
+    .titre-btn:hover {
+        transform: scale(1.02);
+        background-color: var(--blanc-fonce);
+    }
+
+  
+    /* LIENS DANS LES BLOCS */
+    .bloc-liens-inf-footer li {
+        font-size: 0.85rem;
+        color: var(--blanc);
+        margin-bottom: 0.5rem;
+        list-style-type: disc;
+        list-style-position: inside;
+        opacity: 0.95;
+        transition: color 0.3s ease;
+    }
+
+    /* EFFET SURVOL DES LIENS D'INFORMATION */
+    .bloc-liens-inf-footer li:hover {
+        color: var(--noir);
+        cursor: pointer;
+    }
+  
+    /* BARRE BLEUE D'INOFORMATION EN BAS DU FOOTER */
+    .footer-barre-liens {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        transform: translateY(100px);
+    }
+  
+    .barre-liens {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--bleu);
+        border-radius: 50px;
+        border: 3px solid var(--bleu);
+    }
+  
+    .barre-liens li a {
+        font-weight: 800;
+        font-size: 0.7rem;
+        color: var(--blanc);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+  
+    /* EFFET SURVOL DES LIENS DANS LA BARRE DU FOOTER */
+    .barre-liens li a:hover {
+        color: var(--noir);
+    }
+
+
+/* =============================================================================== */
+
+
+/* ======    PAGE #2 "EXPÉRIENCES BONIFIÉES "    ====== */
+/* ======             DESKTOP CSS                ====== */
+/* ======         VERSION GRAND ÉCRAN            ====== */
+
+
+
+/* === SECTION : BANNIÈRE PUBLICITAIRE === */
+
+    .section-publicite {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 2rem 1.5rem 2rem;
+        margin-top: -2rem;
+    }
+  
+    .image-publicite-experiences {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 1.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+  
+    .image-publicite-experiences:hover {
+        transform: scale(1.02);
+    }
+
+/* === SECTION : TITRE ET PARAGRAPHE === */
+
+    .section-intro {
+        text-align: center;
+        max-width: 700px;
+        margin: 4rem auto 4rem auto; 
+        padding: 0 1rem;
+        transform: translateY(30px);
+    }
+  
+    .titre-experiences {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--blanc);
+        margin-bottom: 1rem;
+        font-family: var(--police-principale);
+    }
+  
+    .texte-intro-experiences {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--bleu);
+        font-family: var(--police-principale);
+        text-align: justify; 
+        }
+
+/* === SECTION : CARTES DES EXPÉRIENCES === */
+    .section-cartes-experiences {
+        padding: 4rem 2rem;
+        display: flex;
+        justify-content: center;
+    }
+  
+    .grille-cartes-experiences {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 6rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+  
+    /* === STYLE GÉNÉRAL DE CHAQUE CARTE === */
+    .carte-experience {
+        background-color: transparent;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        box-shadow: none; 
+        margin: 0.5rem;
+    }
+  
+    /* EFFET DE SURVOL SUR LES CARTES D'EXPÉRIENCES */
+    .carte-experience:hover {
+        transform: scale(1.02);
+    }
+  
+    /* IMAGE DE L’AFFICHE EXPÉRIENCE */
+    .image-experience {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        display: block;
+        transform: translateY(10px);
+    }
+  
+    /* === CADRES NOIR SOUS L’IMAGE AVEC TEXTE === */
+    .texte-experience {
+        background-color: black;
+        color: var(--blanc);
+        border-radius: 20px;
+        padding: 1.2rem;
+        box-sizing: border-box;
+        text-align: justify;
+        margin-top: -10px;
+        z-index: 1;
+        position: relative;
+        height: 170px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  
+    /* TITRE DANS LA CARTE D'EXPÉRIENCES */
+    .texte-experience h3 {
+        margin-top: 0;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: var(--police-principale);
+        height: 1.8rem;
+        line-height: 1.8rem;
+    }
+  
+    /* DESCRIPTION-PARAGRAPHE EN BLEU ET JUSTIFIÉ */
+    .texte-experience p {
+        margin-top: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--bleu); 
+        text-align: justify;
+        font-family: var(--police-principale);
+        height: 4.5rem;
+        line-height: 1.5rem;
+        overflow: hidden;
+        transition: color 0.3s ease-in-out 0.1s;
+    }
+
+    /* EFFET SURVOL - CHANGEMENT DE COULEUR POUR LES PARAGRAPHES */
+    .texte-experience p:hover {
+        color: var(--blanc);
+    }
+
+/* =============================================================================== */
+
+
+/*  ======                ======  */
+/*  ======    VERSION     ======  */
+/*  ======   MOBILE CSS   ======  */
+
+
+
+@media screen and (max-width: 768px) {
+
+/* === STYLE CSS MOBILE FIRST - SECTION : ENTÊTE (HEADER) === */
+    
+    /* CONTENEUR GÉNÉRAL DU HEADER */
+    .entete-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        transform: none;
+        padding-top: 1rem;
+        margin-top: 2rem;
+    }
+  
+    /* LOGO CINÉPLEX AU HEADER */
+    .logo-cineplex-entete {
+        transform: none;
+        margin: 0 auto;
+        height: auto;
+        max-width: 160px;
+        transform: translateY(90px);
+        transition: transform 0.3s ease;
+    }
+
+    /* EFFET D'AGRANDIR ÉCHELLE AU SURVOL DU LOGO-CINÉPLEX AU HEADER */
+    .logo-cineplex-entete:hover {
+        transform: translateY(90px) scale(1.02);
+    }
+  
+    /* CONTENEUR DES ACTIONS EN HAUT DU HEADER (LANGUE, ICÔNE, RECHERCHE) */
+    .entete-actions {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.2rem;
+        flex-wrap: wrap;
+        transform: none;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        order: 2;
+    }
+  
+    /* BOUTON DE LANGUE */
+    .cadre-langue {
+        transform: translateY(-130px) translateX(-98px);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        transform-origin: center center;
+    }
+
+    /* EFFET SURVOL D'AGRANDIR L'ÉCHELLE ET CHANGEMENT DE COULEUR DU BOUTON "LANGUE" */
+    .cadre-langue:hover {
+        transform: translateY(-130px) translateX(-98px) scale(1.02);
+        background-color: var(--bleu-fonce);
+    }
+
+    /* ICÔNES ARRONDIES */
+    .icone-action {
+        order: 2;
+    }
+
+    /* ICÔNE DE LOCALISATION */
+    .icone-localisation {
+        transform: translateY(-184px);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        position: relative;
+        will-change: transform, background-color;
+        transform-origin: center center;
+    }
+
+    /* EFFET D'AGRANDIR L'ÉCHELLE AU SURVOL DE L'ICÔNE DE LOCALISATION */
+    .icone-localisation:hover {
+        transform: translateY(-184px) scale(1.05);
+    }
+    
+    /* ICÔNE DE COMPTE D'UTILISATEUR */
+    .icone-compte {
+        transform: translateY(-184px) translateX(175px);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        position: relative;
+        will-change: transform, background-color;
+        transform-origin: center center;
+    }
+
+    /* EFFET D'AGRANDIR L'ÉCHELLE AU SURVOL DE L'ICÔNE DU COMPTE D'UTILISATEUR */
+    .icone-compte:hover {
+        transform: translateY(-184px) translateX(175px) scale(1.05);
+    }
+    
+    /* ICÔNE MENU BURGER */
+    .icone-menu {
+        transform: translateY(-184px) translateX(98px);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        position: relative;
+        will-change: transform, background-color;
+        transform-origin: center center;
+    }
+
+    /* EFFET D'AGRANDIR L'ÉCHELLE AU SURVOL DE L'ICÔNE MENU BURGER */
+    .icone-menu:hover {
+        transform: translateY(-184px) translateX(98px) scale(1.05);
+    }
+
+    /* BARRE DE RECHERCHE BLEUE */
+    .cadre-recherche {
+        order: 2;
+        flex-grow: 0;
+        max-width: 100%;
+        transform: translateY(-130px) translateX(-10px);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        transform-origin: center center;
+    }
+
+    /* EFFET D'AGRANDIR L'ÉCHELLE AU SURVOL DE LA BARRE DE RECHERCHE */
+    .cadre-recherche:hover {
+        background-color: var(--bleu-fonce);
+        transform: translateY(-130px) translateX(-10px) scale(1.02);
+      }
+  
+    /* LÀ ON MASQUE LE MENU DE NAVIGATION PRINCIPAL EN VERSION MOBILE */
+    .menu-navigation {
+        display: none;
+    }
+  
+    /* PREMIÈRE BARRE BLEUE DE SÉPARATION SOUS LE HEADER */
+    .barre-1-bleue {
+        transform: none;
+        margin: 1rem auto;
+        margin-left: 2.9rem;
+        margin-right: 2.9rem;
+        border-radius: 4px;
+    }
+
+/* === STYLE CSS MOBILE FIRST – SECTION : HÉRO / BANNIÈRE KUNG FU PANDA === */
+
+    /* CONTENEUR PRINCIPAL DE LA BANNIÈRE KUNG FU PANDA */
+    .hero {
+        padding: 0 3.7rem; 
+        margin-top: -7rem; 
+        margin-bottom: 2rem; 
+        display: flex;
+        justify-content: center;
+    }
+  
+    /* CONTENEUR DU POPUP (BANNIÈRE) */
+    .hero-container {
+        max-width: 100%;
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
+  
+    /* IMAGE KUNG FU PANDA DE LA BANNIÈRE */
+    .hero-image {
+        width: 100%;
+        border-radius: 1.5rem;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+        object-fit: cover;
+        display: block;
+    }
+
+    /*TAILLE DES BOUTONS DE GLISSEMENT DE LA BANNIÈRE KUNG FU PANDA */
+    .btn-glisser {
+        width: 14px;
+        height: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+  
+    /* POSITION BOUTON À GAUCHE DE LA BANNIÈRE */
+    .btn-gauche {
+        left: 0.8rem;
+    }
+    /* POSITION BOUTON À DROITE DE LA BANNIÈRE */
+    .btn-droite {
+        right: 0.8rem;
+    }
+
+    /* CERCLES DE NAVIGATION KUNG FU PANDA */
+    .cercles-navigation {
+        bottom: 0.4rem; 
+        gap: 0.4rem;    
+    }
+    
+    /* TAILLE DES 3 CERCLES (RÉDUITE) DANS LA BANNIÈRE */
+    .cercles-navigation img {
+        width: 8px;
+        height: 8px;
+    }
+
+/* === STYLE CSS MOBILE FIRST – SECTION CONTENU PRINCIPALE : FILM, ÉVÉNEMENTS SPÉCIAUX ET À VENIR === */
+
+    /* CONTENEUR DES CARTES DE FILMS */
+    .cartes-films {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+    }
+    
+    /* STYLE APPLIQUÉ AUX CARTES-AFFICHES DE FILMS ET À LA CARTE "VOIR PLUS" */
+    .carte-film,
+    .voir-plus {
+        flex: 0 0 calc(50% - 0.6rem); 
+        max-width: 170px;
+        height: 360px;
+    }
+
+
+/* === STYLE CSS MOBILE FIRST – SECTION : POPUP PROMO KONG VS GODZILLA === */
+
+    /* SECTION CONTENANT LE POPUP */
+    .section-popup {
+        padding: 1.2rem 2rem; 
+        margin-top: -2rem;
+        margin-bottom: -2rem; 
+        display: flex;
+        justify-content: center;
+    }
+  
+    /* CONTENEUR DU POPUP */
+    .popup-promo {
+        width: 100%; 
+        max-width: 85%; 
+        height: auto;
+        border-radius: 1.5rem;
+    }
+  
+    /* IMAGE À L'INTÉRIEUR DU POPUP */
+    .popup-promo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.08); 
+        object-position: center center;
+        display: block;
+    }
+
+/* === STYLE CSS MOBILE FIRST – SECTION : FOOTER === */
+
+    /* BARRE BLEU DE SÉPARATION ENTRE LE FOOTER ET LE CONTENU PRINCIPALE */
+    .barre-2-bleue {
+        transform: none;
+        margin: 1rem auto;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        border-radius: 4px;
+      }
+
+    /* CONTENEUR PRINCIPALE DU FOOTER */
+    .footer-accueil {
+        padding: 2rem 1rem 6rem 1rem;
+    }
+
+    /* BOUTON BLEU "NOUS JOINDRE" */
+    .btn-nous-joindre {
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        width: 30%;  
+        height: 30px; 
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        position: relative;
+        will-change: transform, background-color;
+        transform-origin: center center;
+        transform: translateY(30px); 
+    }
+    
+    /* EFFET CHANGEMENT-COULEUR ET AGRANDIR ÉCHELLE AU SURVOL DU BOUTON "NOUS JOINDRE" */
+    .btn-nous-joindre:hover {
+        background-color: var(--bleu-fonce);
+        transform: translateY(30px) scale(1.02); 
+    }
+
+    /* CONTENEUR PRINCIPALE DES ICÔNES SOCIALES (FACEBOOK, INSTA, ETC.) */
+    .icons-sociales {
+        gap: 0.8rem;
+        transform: translateY(30px);
+    }
+
+    /* STYLE DES IMAGES D'ICÔNES SOCIALES */
+    .icons-sociales img {
+        width: 38px;  
+        height: 38px; 
+        transition: transform 0.3s ease;
+    }
+
+    /* EFFET D'AGRANDIR L'ÉCHELLE AU SURVOL DES ICÔNES SOCIALES */
+    .icons-sociales img:hover {
+        transform: scale(1.05);
+    }
+
+    /* BOÎTE OU CONTENEUR PRINCIPALE DU LOGO + BLOCS DES LIENS */
+    .footer-boite-centrale {
+        max-width: 100%;
+        padding: 2.5rem 1.2rem;
+        border-radius: 25px;
+        transform: translateY(60px);
+        width: 80%;
+    }
+
+    /* LOGO-CINÉPLEX QUI EST CENTRÉ DANS LE FOOTER */
+    .logo-cineplex-footer img {
+        width: 120px;
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        transition: transform 0.3s ease; 
+        transform-origin: center center; 
+    }
+    
+    /* EFFET D'AGRANDIR L'ÉCHELLE AU SURVOL DU LOGO-CINÉPLEX */
+    .logo-cineplex-footer img:hover {
+        transform: scale(1.05); 
+    }
+
+    /* CONTENEUR DES BLOCS DE LIENS (3 CATÉG) */
+    .blocs-inf-footer {
+        flex-direction: column;
+        gap: 2.2rem;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    /* STYLE GÉNÉRALE DE CHAQUE BLOC DE LIENS */
+    .bloc-liens-inf-footer {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* TITRES DES BOUTONS BLANCS AU-DESSUS DE CHAQUE BLOC */
+    .titre-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    /* STYLE DES LIENS DE CHAQUE BLOC (LISTE À PUCES OU POINTS BLANCS) */
+    .bloc-liens-inf-footer li {
+        list-style-type: disc; 
+        list-style-position: inside; 
+        color: var(--blanc);
+        font-size: 0.9rem;
+        line-height: 1.6;
+        text-align: start; 
+        margin-left: 1rem; 
+    }
+
+/* === STYLE CSS MOBILE FIRST POUR LA BARRE BLEU D'INFO DANS LE FOOTER === */
+    
+    /* CONTENEUR PRINCIPAL DE LA BARRE D'INFO VERSION MOBILE */
+    .footer-barre-liens {
+        margin: 2.5rem auto 1rem auto; 
+        display: flex;
+        justify-content: center;
+        transform: translateY(60px);
+        width: 90%; 
+        max-width: 320px; 
+    }
+    
+    /* STYLE DE LA BARRE ELLE-MÊME CONTENANT LES LIENS */
+    .barre-liens {
+        display: flex;
+        flex-wrap: nowrap; 
+        justify-content: center;
+        gap: 0.8rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--bleu);
+        border-radius: 50px;
+        border: 2px solid var(--bleu);
+    }
+    
+    /* LÀ ON SUPPRIME LE STYLE PAR DÉFAUT DES PUCES DE LA LISTE */
+    .barre-liens li {
+        list-style: none;
+    }
+    
+    /* STYLE DES LIENS TEXTUELS À L'INTÉRIEUR DE LA BARRE */
+    .barre-liens li a {
+        font-weight: 700;
+        font-size: 0.65rem;
+        color: var(--blanc);
+        white-space: nowrap; 
+        text-decoration: none;
+    }
+  }
