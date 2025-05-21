@@ -1,13 +1,326 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cineplex</title>
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil | Cineplex</title>
+    <!-- Lien vers le fichier CSS principal -->
+    <link rel="stylesheet" href="../css/main.css" />
     
-</body>
+  </head>
+  <body>
+
+ <!-- === SECTION : ENTÊTE (HEADER ET NAVIGATION) === -->
+    <header class="entete-accueil">
+        <div class="entete-container">
+          <!-- LOGO CINEPLEX DANS L'ENTÊTE -->
+          <img src="../assets/images/logo_cineplex_entete.svg" alt="Logo Cineplex" class="logo-cineplex-entete" />
+      
+          <!-- MENU DE NAVIGATION DANS L'ENTÊTE -->
+          <nav class="menu-navigation">
+            <ul class="menu-principal">
+                <li class="item-menu experiences-bonifiees">
+                  <img src="../assets/images/logo_etoiles_experiences_bonifiees.svg" alt="Expériences Bonifiées" />
+                  <a href="#">Expériences Bonifiées</a>
+                </li>
+                <li class="item-menu aliments-boissons">
+                  <img src="../assets/images/logo_popcorn_aliments_et_boissons.svg" alt="Aliments et Boissons" />
+                  <a href="#">Aliments et Boissons</a>
+                </li>
+                <li class="item-menu billets">
+                  <img src="../assets/images/logo_billets.svg" alt="Billets" />
+                  <a href="#">Billets</a>
+                </li>
+              </ul>
+          </nav>
+      
+          <!-- ACTIONS À DROITE DANS L'ENTÊTE (LE HEADER ET NAV) -->
+
+          <div class="entete-actions">
+
+            <!-- CHANGEMENT DE LANGUE -->
+            <!-- CHANGEMENT DE LANGUE -->
+            <div class="cadre-langue">
+                <span>FR</span>
+                <img src="../assets/images/icone_drapeau_du_canada.svg" alt="Drapeau du Canada" />
+              </div>
+      
+            <!-- BARRE DE RECHERCHE -->
+            <div class="cadre-recherche">
+              <img src="../assets/images/icone_barre_recherche_entete.svg" alt="Recherche"  />
+              <input type="text" placeholder="Rechercher" />
+            </div>
+      
+            <!-- ICÔNES : LOCALISATION, COMPTE ET MENU BURGER -->
+            <img src="../assets/images/icone_localisation.svg" alt="Localisation" class="icone-action icone-localisation" />
+            <img src="../assets/images/icone_compte.svg" alt="Compte utilisateur" class="icone-action icone-compte" />
+            <img src="../assets/images/icone_menu_burger.svg" alt="Menu" class="icone-action icone-menu" />
+          </div>
+        </div>
+      
+        <!-- BARRE #1 BLEUE DE SEPARATION HEADER -->
+        <div class="barre-1-bleue"></div>
+      </header>
+
+<!-- === CONTENU PRINCIPAL DE LA PAGE D'ACCUEIL - === -->
+      
+<main class="contenu-principal">
+    
+<!-- === SECTION : HÉROS (BANNIÈRE PUBLICITAIRE CINÉMA - KUNG FU PANDA) -->
+    
+<section class="hero">
+    <div class="hero-container">
+      <img src="../assets/images/popup_kung_fu_panda.png" alt="Kung Fu Panda 4" class="hero-image" />
+  
+      <!-- BOUTONS DE NAVIGATION DU POPUP-->
+      <img src="../assets/images/bouton_glisser_gauche.svg" alt="Précédent" class="btn-glisser btn-gauche" />
+      <img src="../assets/images/bouton_glisser_droite.svg" alt="Suivant" class="btn-glisser btn-droite" />
+  
+      <!-- CERCLES DE NAVIGATION EN BAS DU POPUP -->
+      <div class="cercles-navigation">
+        <img src="../assets/images/cercle_popup_suivant_1.svg" alt="Cercle 1" />
+        <img src="../assets/images/cercle_popup_suivant_2.svg" alt="Cercle 2" />
+        <img src="../assets/images/cercle_popup_suivant_3.svg" alt="Cercle 3" />
+      </div>
+    </div>
+  </section>
+
+
+<!-- === GRANDE SECTION : CARTES DE FILMS (FILMS, ÉVÉNEMENTS SPÉCIAUX, À VENIR) === -->
+
+<!-- FILMS -->
+<section class="section-films">
+    <h2>Films</h2>
+
+    <div class="cartes-films">
+
+      <div class="carte-film">
+        <img src="../assets/images/affiche_godzilla_et_kong_le_nouvel_empire.png" alt="Godzilla et Kong: le nouvel empire" />
+        <div class="infos-film">
+          <p>Godzilla et Kong: le nouvel empire</p>
+          <div class="bande-annonce">
+            <img src="../assets/images/icone_play.svg" alt="Play" />
+            <a href="#">Voir la bande-annonce</a>
+          </div>
+        </div>
+      </div>
+      <div class="carte-film">
+        <img src="../assets/images/affiche_dune_deuxieme_partie.png" alt="Dune Deuxième Partie" />
+        <div class="infos-film">
+          <p>Dune Deuxième Partie</p>
+          <div class="bande-annonce">
+            <img src="../assets/images/icone_play.svg" alt="Play" />
+            <a href="#">Voir la bande-annonce</a>
+          </div>
+        </div>
+      </div>
+      <div class="carte-film">
+        <img src="../assets/images/affiche_immaculee.png" alt="Immaculée" />
+        <div class="infos-film">
+          <p>Immaculée</p>
+          <div class="bande-annonce">
+            <img src="../assets/images/icone_play.svg" alt="Play" />
+            <a href="#">Voir la bande-annonce</a>
+          </div>
+        </div>
+      </div>
+      <div class="carte-film voir-plus">
+        <p>Voir Plus</p>
+      </div>
+    </div>
+  </section>
+
+<!-- ÉVÉNEMENTS SPÉCIAUX -->  
+<section class="section-films">
+    <h2>Événements Spéciaux</h2>
+
+    <div class="cartes-films">
+
+      <div class="carte-film">
+        <img src="../assets/images/affiche_spiderman_loin_des_siens.png" alt="Spider-Man: Loin Des Siens" />
+        <div class="infos-film">
+          <p>Spider-Man: Loin Des Siens</p>
+          <div class="bande-annonce">
+            <img src="../assets/images/icone_play.svg" alt="Play" />
+            <a href="#">Voir la bande-annonce</a>
+          </div>
+        </div>
+      </div>
+      <div class="carte-film">
+        <img src="../assets/images/affiche_pearl_jam_matiere_noire.png" alt="Pearl Jam – Matière Noire" />
+        <div class="infos-film">
+          <p>Pearl Jam – Matière Noire</p>
+          <div class="bande-annonce">
+            <img src="../assets/images/icone_play.svg" alt="Play" />
+            <a href="#">Voir la bande-annonce</a>
+          </div>
+        </div>
+      </div>
+      <div class="carte-film">
+        <img src="../assets/images/affiche_le_brillant.png" alt="Le Brillant" />
+        <div class="infos-film">
+          <p>Le Brillant</p>
+          <div class="bande-annonce">
+            <img src="../assets/images/icone_play.svg" alt="Play" />
+            <a href="#">Voir la bande-annonce</a>
+          </div>
+        </div>
+      </div>
+      <div class="carte-film voir-plus">
+        <p>Voir Plus</p>
+      </div>
+    </div>
+  </section>
+
+<!-- À VENIR --> 
+<section class="section-films">
+    <h2>À Venir</h2>
+
+    <div class="cartes-films">
+
+      <div class="carte-film">
+        <img src="../assets/images/affiche_les_cartes_du_mal.png" alt="Les Cartes Du Mal" />
+        <div class="infos-film">
+          <p>Les Cartes Du Mal</p>
+          <div class="bande-annonce">
+            <img src="../assets/images/icone_play.svg" alt="Play" />
+            <a href="#">Voir la bande-annonce</a>
+          </div>
+        </div>
+      </div>
+      <div class="carte-film">
+        <img src="../assets/images/affiche_mauvais_garcons_a_la_vie_a_la_mort.png" alt="Mauvais Garçons: À La Vie, À La Mort" />
+        <div class="infos-film">
+          <p>Mauvais Garçons: À La Vie, À La Mort</p>
+          <div class="bande-annonce">
+            <img src="../assets/images/icone_play.svg" alt="Play" />
+            <a href="#">Voir la bande-annonce</a>
+          </div>
+        </div>
+      </div>
+      <div class="carte-film">
+        <img src="../assets/images/affiche_deadpool_et_wolwerine.png" alt="Deadpool et Wolverine" />
+        <div class="infos-film">
+          <p>Deadpool et Wolverine</p>
+          <div class="bande-annonce">
+            <img src="../assets/images/icone_play.svg" alt="Play" />
+            <a href="#">Voir la bande-annonce</a>
+          </div>
+        </div>
+      </div>
+      <div class="carte-film voir-plus">
+        <p>Voir Plus</p>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- === SECTION : POPUP PROMOTIONNEL KONG VS GODZILLA === -->
+<section class="section-popup">
+    <div class="popup-promo">
+      <img src="../assets/images/popup_kong_vs_godzilla.png" alt="Promo Godzilla vs Kong" />
+  
+      <div class="zone-texte">
+        <p>Gagner 300 Points<br />Scène+ En Prime</p>
+      </div>
+  
+      <button class="btn-popup">Regardez À La Maison</button>
+  
+      <button class="btn-fermer">
+        <img src="../assets/images/bouton_x_pour_fermer.svg" alt="Fermer" />
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<!-- === SECTION : PIED DE PAGE (FOOTER) === -->
+    
+    <footer class="footer-accueil">
+
+        <!-- BARRE #2 BLEUE DE SÉPARATION FOOTER -->
+        <div class="barre-2-bleue"></div>
+
+    <!-- CONTENEUR CENTRAL DU FOOTER -->
+    <div class="footer-contenu">
+      
+        <!-- BOUTON "NOUS JOINDRE" + CONTACT/RESEAUX SOCIAUX -->
+        <div class="footer-contact">
+          <div class="btn-nous-joindre">
+            <p>Nous Joindre</p>
+          </div>
+      
+          <div class="icons-sociales">
+            <img src="../assets/images/icone_telephone_pied_de_page.svg" alt="Telephone" />
+            <img src="../assets/images/icone_facebook_pied_de_page.svg" alt="Facebook" />
+            <img src="../assets/images/icone_twitter_pied_de_page.svg" alt="Twitter" />
+            <img src="../assets/images/icone_instagram_pied_de_page.svg" alt="Instagram" />
+          </div>
+        </div>
+      
+        <!-- GRAND CADRE BLEU CONTENANT LE LOGO + BLOCS DE LIENS -->
+        <div class="footer-boite-centrale">
+          <div class="logo-cineplex-footer">
+            <img src="../assets/images/logo_cineplex_pied_de_page.svg" alt="Logo Cineplex" />
+          </div>
+      
+          <div class="blocs-inf-footer">
+            <div class="bloc-liens-inf-footer">
+              <div class="titre-btn">Plus À Cineplex</div>
+              <ul>
+                <li>Santé et sécurité</li>
+                <li>Centre d’aide</li>
+                <li>Faites carrière chez Cineplex</li>
+                <li>Occasions promotionnelles</li>
+                <li>Le Magazine Cineplex</li>
+                <li>Carte-cadeau électronique en cadeau</li>
+                <li>Cartes-cadeaux</li>
+                <li>Téléchargez l’application</li>
+              </ul>
+            </div>
+      
+            <div class="bloc-liens-inf-footer">
+              <div class="titre-btn">Profil De L’entreprise</div>
+              <ul>
+                <li>Services aux entreprises et locations</li>
+                <li>Profil de l’entreprise</li>
+                <li>Salle de presse</li>
+                <li>Relations avec les investisseurs</li>
+                <li>Produit d’entreprise</li>
+              </ul>
+            </div>
+      
+            <div class="bloc-liens-inf-footer">
+              <div class="titre-btn">Profil Du Cinéma</div>
+              <ul>
+                <li>Trouver un cinéma</li>
+                <li>Aliments et boissons</li>
+                <li>Fêtes d’anniversaire</li>
+                <li>Vedettes et poussettes</li>
+                <li>Accessibilité</li>
+                <li>Accès au divertissement</li>
+                <li>Réunions et de projections pour entreprises</li>
+                <li>Événements scolaires</li>
+                <li>Code de conduite des invités</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+        <!-- BARRE BLEUE INFÉRIEURE -->
+        <div class="footer-barre-liens">
+          <ul class="barre-liens">
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">Conditions D’utilisation</a></li>
+            <li><a href="#">Paramètres Des Témoins</a></li>
+          </ul>
+        </div>
+        
+      </footer>
+
+      <script src="../js/script.js"></script>
+
+  </body>
 </html>
