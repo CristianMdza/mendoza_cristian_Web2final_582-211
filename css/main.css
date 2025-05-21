@@ -385,38 +385,6 @@ html, body {
     }
 
 
-/* === BANDE DES LOGOS CINEPLEX EN MOUVEMENT === */
-.bande-logos {
-    background-color: var(--noir);
-    overflow: hidden;
-    width: 100%;
-    padding: 1rem 0;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 2rem;
-  }
-  
-  .logos-animation {
-    display: flex;
-    gap: 3rem;
-    animation: defileLogos 20s linear infinite;
-    width: fit-content;
-  }
-  
-  .logos-animation img {
-    height: 40px;
-    flex-shrink: 0;
-  }
-  
-  @keyframes defileLogos {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(100%);
-    }
-  }
-
 /* === CONTENU PRINCIPAL DE LA PAGE D'ACCUEIL - ÇA SERT POUR APPLIQUER UN BACKGROUND EN DÉGRADÉ === */
     
     .contenu-principal {
@@ -1506,9 +1474,9 @@ html, body {
 /* =============================================================================== */
 
 
-/*  ======     PAGE #2 "EXPÉRIENCES BONIFIÉES     ======  */
-/*  ======                VERSION                 ======  */
-/*  ======               MOBILE CSS               ======  */
+/*  ======     PAGE #2 "EXPÉRIENCES BONIFIÉES"     ======  */
+/*  ======                VERSION                  ======  */
+/*  ======               MOBILE CSS                ======  */
 
 
     /* === SECTION : BANNIÈRE PUBLICITAIRE === */
